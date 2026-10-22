@@ -1,0 +1,28 @@
+name: Brambles MCP Server
+type: MCPServer
+generated: '2026-10-21'
+method: none
+source:
+- https://www.brambles.com/.well-known/mcp.json
+- https://www.chep.com/.well-known/mcp.json
+description: >-
+  We looked for an official Brambles (or CHEP / IFCO / BXB Digital) MCP server and did not find one.
+  On 2026-10-21, https://www.brambles.com/.well-known/mcp.json and https://www.chep.com/.well-known/mcp.json
+  both returned HTTP 404, as did https://www.brambles.com/AGENTS.md. The pre-flight contract discovery
+  on brambles.com, www.brambles.com and api.brambles.com found no MCP, OpenAPI, AsyncAPI or GraphQL
+  surface. A web search for a Brambles/CHEP MCP server or developer portal found nothing from the company.
+  There is no published OpenAPI to derive a candidate tool list from, so this file lists no tools.
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+tools: []
+probes:
+- url: https://www.brambles.com/.well-known/mcp.json
+  status: 404
+- url: https://www.chep.com/.well-known/mcp.json
+  status: 404
+- url: https://www.brambles.com/AGENTS.md
+  status: 404
+- url: https://www.brambles.com/llms.txt
+  status: 404

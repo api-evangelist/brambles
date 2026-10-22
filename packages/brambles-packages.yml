@@ -1,0 +1,4 @@
+generated: '2026-10-21'
+method: none
+note: No first-party SDK or client library found. npm "brambles" 404; PyPI "brambles" 404; npm "chep" 404; PyPI "chep" exists but is an unrelated personal package (SSH port extractor by Jose Corcios). No GitHub org belonging to Brambles/CHEP was identified (github.com/brambles is an unrelated personal account). Brambles publishes no developer portal (brambles.com sitemap, 227 URLs, has no API/developer pages).
+packages: []

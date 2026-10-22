@@ -1,23 +1,97 @@
 aid: brambles
+
 name: Brambles
-description: 'Brambles is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Brambles Limited (ABN 89 118 896 021, ASX-listed) is a pooling solutions company specialising in the provision of reusable pallets, crates and containers and associated logistics services through its CHEP and IFCO brands, with a digital supply-chain arm (BXB Digital). Its corporate site at brambles.com publishes investor, sustainability, governance and news content; no public developer portal, API documentation or API reference was found on the Brambles site or the BXB Digital page it links to (checked 2026-10-21).
+
 url: https://raw.githubusercontent.com/api-evangelist/brambles/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Logistics
+- Supply Chain
+- Pallet Pooling
+- Reusable Packaging
+- Sustainability
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.brambles.com/Content/img/logo.svg
+
 common:
+- type: Hosts
+  url: hosts/brambles-hosts.yml
+- type: DomainSecurity
+  url: security/brambles-domain-security.yml
 - type: Website
-  url: https://brambles.com/
+  url: https://www.brambles.com/
+- type: Newsroom
+  url: https://www.brambles.com/news
+- type: InvestorRelations
+  url: https://www.brambles.com/investor-centre
+- type: Contact
+  url: https://www.brambles.com/enquiries
+- type: TermsOfService
+  url: https://www.brambles.com/legal
+- type: PrivacyPolicy
+  url: https://www.brambles.com/privacy-notice
+- type: LinkedIn
+  url: https://www.linkedin.com/company/brambles
+- type: Twitter
+  url: https://twitter.com/brambleslimited
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website verified (title "Brambles", meta description names CHEP and IFCO; /legal names Brambles Limited ABN 89 118 896 021). Brambles Digital page and bxbdigital.com (redirects to chep.com/bxb-digital) contain no API or developer links; no developer portal published.
+  evidence:
+  - url: https://brambles.com/
+    status: 200
+  - url: https://www.brambles.com/
+    status: 200
+  - url: https://www.brambles.com/news
+    status: 200
+  - url: https://www.brambles.com/investor-centre
+    status: 200
+  - url: https://www.brambles.com/enquiries
+    status: 200
+  - url: https://www.brambles.com/legal
+    status: 200
+  - url: https://www.brambles.com/privacy-notice
+    status: 200
+  - url: https://www.brambles.com/brambles-digital/
+    status: 200
+  - url: http://bxbdigital.com/
+    status: 200
+  - url: https://www.brambles.com/Content/img/logo.svg
+    status: 200
+  - url: https://www.linkedin.com/company/brambles
+    status: 200
+  - url: https://twitter.com/brambleslimited
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

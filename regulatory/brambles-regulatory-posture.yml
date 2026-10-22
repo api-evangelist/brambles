@@ -1,0 +1,137 @@
+generated: '2026-10-21'
+method: searched
+source: https://www.brambles.com/privacy-notice
+scope: >-
+  Corporate website and online/mobile applications of Brambles Limited and its CHEP-branded affiliates.
+  Read from the provider's own Privacy Notice, Legal page and Accessibility page. No trust center,
+  subprocessor list, AI statement, transparency report or SBOM is linked from these pages; those signals
+  are not recorded.
+signals:
+  data_subject_request:
+    url: https://www.brambles.com/privacy-notice
+    section: '7. YOUR PRIVACY RIGHTS'
+    channel: privacy@brambles.com or the Privacy Rights Intake Form linked from the notice
+    rights_named: [access, rectification, objection, erasure, restriction, portability, no automated decision-making, withdraw consent]
+    evidence:
+    - source: https://www.brambles.com/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Depending on the applicable data protection regulations, you may: (i) request information on and access
+        to the personal information we hold about you (Right of Access); (ii) request that any inaccurate personal
+        information We hold be corrected (Right to Rectification);
+    - source: https://www.brambles.com/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Whilst some of these rights can be exercised by you directly through this website, many of the rights,
+        such as those relating to requests to delete your personal data, will need to be submitted to us.
+    - source: https://www.brambles.com/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We will consider such requests and respond to you. If we deny an access request, we will notify you of the
+        reasons for the denial. We may charge you a small fee and may require verification of your identity before
+        providing a copy of your information as permitted by law.
+    - source: https://www.brambles.com/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        You have the right: (i) to know the categories and/or specific pieces of personal information collected
+        about you, including whether your personal information is sold or disclosed and the purpose, and with whom
+        your personal information was shared in the prior twelve months; (ii) to request deletion of personal
+        information, if permissible by law;
+    note: >-
+      GDPR/UK GDPR-style rights (including portability and objection to automated decision-making) plus a
+      California supplemental notice (section 4. CALIFORNIA PRIVACY RIGHTS). Channel is email or an intake form;
+      no response deadline is stated, and a fee may be charged.
+  data_retention:
+    url: https://www.brambles.com/privacy-notice
+    section: '8. DATA RETENTION'
+    evidence:
+    - source: https://www.brambles.com/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We retain the personal data that we collect from you no longer than is necessary except where we have an
+        ongoing legitimate business need to do so (for example, to provide you with the services you requested or
+        to comply with an applicable legal requirement). In any event, your personal data will be retained
+        consistent with Brambles Global Record Retention Policy and Schedule.
+    note: >-
+      A necessity-based retention principle tied to an internal Global Record Retention Policy and Schedule;
+      no concrete periods are published.
+  data_residency:
+    url: https://www.brambles.com/privacy-notice
+    section: '6.2. Where we store your personal information'
+    evidence:
+    - source: https://www.brambles.com/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Please be aware that the personal data you share may be transferred, and stored, outside of the EU/EEA and
+        outside of the UK, and in a database and on servers in the United States and other countries in which the
+        privacy laws may not be as comprehensive as those in your country of residence or citizenship. Such
+        transfers will occur only where appropriate safeguards are in place, including but not limited to Model Clauses.
+    - source: https://www.brambles.com/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Sharing your information within the Brambles Group is subject to an Intragroup Data Transfer Agreement.
+    note: >-
+      No residency commitment: data may be stored in the US and other countries, with cross-border transfers
+      relying on SCCs / UK International Data Transfer clauses and an intragroup transfer agreement.
+  subprocessors:
+    url: https://www.brambles.com/privacy-notice
+    section: '4. DISCLOSURE OF YOUR PERSONAL INFORMATION'
+    published_list: false
+    evidence:
+    - source: https://www.brambles.com/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        we may share your personal information or usage information with third parties that perform functions on
+        our behalf (or on behalf of other entities with which We do business), such as companies or individuals
+        that: provide IT services; host our data; host or operate our systems and sites; analyse data; provide
+        customer service;
+    note: >-
+      Categories of processors are described; no named subprocessor list is published or linked.
+  incident_notification:
+    url: https://www.brambles.com/privacy-notice
+    section: '9. SECURITY'
+    evidence:
+    - source: https://www.brambles.com/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        If, despite all our efforts, a data breach does occur, we shall do everything reasonably practicable to
+        limit the damage. In case of a data breach, and depending on the circumstances, we will inform you about
+        remedial actions to prevent any further damage.
+    note: >-
+      A conditional ("depending on the circumstances") commitment to inform data subjects of remedial actions;
+      no notification timeframe is stated.
+  age_assurance:
+    url: https://www.brambles.com/privacy-notice
+    section: '10.3. Children'
+    evidence:
+    - source: https://www.brambles.com/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Our services are generally not directed to children under 16. We do not knowingly collect personal
+        information from anyone under 16 without parental consent.
+    note: Self-declared age threshold of 16; no age-verification mechanism is described.
+  accessibility_conformance:
+    url: https://www.brambles.com/accessibility
+    section: Accessibility
+    target: WCAG Level AA (in progress, not claimed)
+    evidence:
+    - source: https://www.brambles.com/accessibility
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Brambles is committed to creating a digitally accessible experience for everyone, including people with
+        disabilities. We are continually working to improve the user experience and accessibility of our websites
+        and mobile applications. We are currently working towards the Web Content Accessibility Guidelines (WCAG) Level AA.
+    note: >-
+      A stated target, not a conformance claim; the page cites external accessibility assessments and iterative
+      updates. Linked from the site footer.

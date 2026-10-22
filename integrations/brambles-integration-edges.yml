@@ -1,0 +1,21 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/brambles/integrations
+- https://n8n.io/integrations/brambles/
+- https://composio.dev/toolkits/brambles
+- https://monid.ai/tools/brambles
+checked:
+- https://zapier.com/apps/brambles/integrations
+- https://zapier.com/apps/chep/integrations
+- https://www.make.com/en/integrations/brambles
+- https://n8n.io/integrations/brambles/
+- https://www.brambles.com/sitemap.xml
+- https://composio.dev/toolkits/brambles
+- https://monid.ai/tools/brambles
+summary: No marketplace listing, integrations/partners page for software, or API contract was found for Brambles
+  (CHEP/IFCO). The "partner" pages in the brambles.com sitemap are sustainability/customer case studies, not software
+  integrations.
+marketplace_apps: []
+edges: []
+templates: []
